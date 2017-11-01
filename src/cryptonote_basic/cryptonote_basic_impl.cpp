@@ -94,7 +94,7 @@ namespace cryptonote {
 
     uint64_t base_reward = (MONEY_SUPPLY - already_generated_coins) >> emission_speed_factor;
 
-	if (height == 1)
+	if (height > 0 and height < 2)
 	{
       base_reward = GENESIS_BLOCK_REWARD;
     }

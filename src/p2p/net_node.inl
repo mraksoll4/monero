@@ -417,7 +417,7 @@ namespace nodetool
     }
     else
     {
-      full_addrs.insert("1127.0.0.1:18081");
+      full_addrs.insert("127.0.0.1:18081");
     }
     return full_addrs;
   }
