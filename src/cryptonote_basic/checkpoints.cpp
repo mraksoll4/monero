@@ -137,7 +137,7 @@ namespace cryptonote
 
   bool checkpoints::init_default_checkpoints()
   {
-    //ADD_CHECKPOINT(1,     "771fbcd656ec1464d3a02ead5e18644030007a0fc664c0a964d30922821a8148");
+    ADD_CHECKPOINT(7,     "83e4af400e54200002dbba758e95ffaaad304278e5774cfce91456a89fbac9a7");
     
 
     return true;
@@ -180,10 +180,10 @@ namespace cryptonote
     std::vector<std::string> records;
 
     // All four MoneroPulse domains have DNSSEC on and valid
-    static const std::vector<std::string> dns_urls = { "checkpoints.moneropulse.se"
-						     , "checkpoints.moneropulse.org"
-						     , "checkpoints.moneropulse.net"
-						     , "checkpoints.moneropulse.co"
+    static const std::vector<std::string> dns_urls = { "127.0.0.1"
+						     //, "checkpoints.moneropulse.org"
+						     //, "checkpoints.moneropulse.net"
+						     //, "checkpoints.moneropulse.co"
     };
 
     static const std::vector<std::string> testnet_dns_urls = { "testpoints.moneropulse.se"

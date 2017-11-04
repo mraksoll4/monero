@@ -88,9 +88,14 @@ static const struct {
   time_t time;
 } mainnet_hard_forks[] = {
   // version 1 from the start of the blockchain
-  //{ 1, 1, 0, 1341378000 },
+  { 1, 1, 0, 1509652800 },
+  { 2, 5, 0, 1509652801 },
+  { 3, 8, 0, 1509652802 },
+  { 4, 10, 0, 1509652803 },
+  { 5, 12, 0, 1509652804 },
+  { 6, 14, 0, 1509652805 },
 };
-static const uint64_t mainnet_hard_fork_version_1_till = 1009826;
+static const uint64_t mainnet_hard_fork_version_1_till = 4;
 
 static const struct {
   uint8_t version;
@@ -99,7 +104,7 @@ static const struct {
   time_t time;
 } testnet_hard_forks[] = {
   // version 1 from the start of the blockchain
-  { 1, 1, 0, 1341378000 },
+  //{ 1, 1, 0, 1509652800 },
 
   // version 2 starts from block 624634, which is on or around the 23rd of November, 2015. Fork time finalised on 2015-11-20. No fork voting occurs for the v2 fork.
   { 2, 624634, 0, 1445355000 },
@@ -357,7 +362,7 @@ bool Blockchain::init(BlockchainDB* db, const bool testnet, const cryptonote::te
 
   // genesis block has no timestamp, could probably change it to have timestamp of 1341378000...
   if(!top_block_timestamp)
-    timestamp_diff = time(NULL) - 1341378000;
+    timestamp_diff = time(NULL) - 1509652800;
 
   // create general purpose async service queue
 
@@ -4125,7 +4130,7 @@ void Blockchain::cancel()
 }
 
 #if defined(PER_BLOCK_CHECKPOINT)
-static const char expected_block_hashes_hash[] = "d3ca80d50661684cde0e715d46d7c19704d2e216b21ed088af9fd4ef37ed4d65";
+static const char expected_block_hashes_hash[] = "e7f54f73781c2fcd6a12b6a7651c04198ea2ce138b7eb474f9d2c3b9e5d84a88";
 void Blockchain::load_compiled_in_block_hashes()
 {
   if (m_fast_sync && get_blocks_dat_start(m_testnet) != nullptr && get_blocks_dat_size(m_testnet) > 0)

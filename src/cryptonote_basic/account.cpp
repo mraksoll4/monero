@@ -77,9 +77,9 @@ DISABLE_VS_WARNINGS(4244 4345)
     generate_keys(m_keys.m_account_address.m_view_public_key, m_keys.m_view_secret_key, second, two_random ? false : true);
 
     struct tm timestamp = {0};
-    timestamp.tm_year = 2014 - 1900;  // year 2014
-    timestamp.tm_mon = 6 - 1;  // month june
-    timestamp.tm_mday = 8;  // 8th of june
+    timestamp.tm_year = 2017 - 1900;  // year 2014
+    timestamp.tm_mon = 10 - 1;  // month june
+    timestamp.tm_mday = 7;  // 8th of june
     timestamp.tm_hour = 0;
     timestamp.tm_min = 0;
     timestamp.tm_sec = 0;
@@ -104,9 +104,9 @@ DISABLE_VS_WARNINGS(4244 4345)
     m_keys.m_view_secret_key = viewkey;
 
     struct tm timestamp = {0};
-    timestamp.tm_year = 2014 - 1900;  // year 2014
-    timestamp.tm_mon = 4 - 1;  // month april
-    timestamp.tm_mday = 15;  // 15th of april
+    timestamp.tm_year = 2017 - 1900;  // year 2014
+    timestamp.tm_mon = 10 - 1;  // month april
+    timestamp.tm_mday = 7;  // 15th of april
     timestamp.tm_hour = 0;
     timestamp.tm_min = 0;
     timestamp.tm_sec = 0;
