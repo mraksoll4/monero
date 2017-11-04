@@ -137,7 +137,7 @@ namespace cryptonote
 
   bool checkpoints::init_default_checkpoints()
   {
-    ADD_CHECKPOINT(7,     "83e4af400e54200002dbba758e95ffaaad304278e5774cfce91456a89fbac9a7");
+    //ADD_CHECKPOINT(7,     "83e4af400e54200002dbba758e95ffaaad304278e5774cfce91456a89fbac9a7");
     
 
     return true;
